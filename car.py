@@ -64,6 +64,10 @@ class Pet():
             self.energy_level = 100
             print(f"{self.name} is ready to play!")
 
+    def lapse_time(self):
+        self.belly -= 50
+        print(f"{self.belly} belly size")
+
     def eat(self):
         if self.belly >= 100:
             print(f"{self.name} is too full to eat")
@@ -79,11 +83,12 @@ my_pet.play()
 my_pet.play()
 my_pet.play()
 my_pet.play()
+my_pet.rest()
 my_pet.play()
 my_pet.play()
 my_pet.play()
-my_pet.play()
-my_pet.play()
-my_pet.play()
+my_pet.lapse_time()
+my_pet.eat()
+
     
     
